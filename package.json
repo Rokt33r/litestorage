@@ -1,0 +1,44 @@
+{
+  "name": "litestorage",
+  "version": "1.0.0",
+  "description": "Simpler storage for your test experience!",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -P tsconfig.build.json",
+    "lint": "prettier --check src/**/*.ts specs/**/*.ts",
+    "format": "prettier --write src/**/*.ts specs/**/*.ts",
+    "test": "npm run lint && npm run test-type && npm run test-coverage",
+    "test-api": "jest",
+    "test-type": "tsc --noEmit",
+    "test-coverage": "jest --coverage",
+    "codecov": "codecov -f coverage/*.json",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "keywords": [
+    "storage",
+    "localstorage",
+    "local-storage",
+    "memorystorage",
+    "memory-storage",
+    "mock",
+    "test"
+  ],
+  "author": "Junyoung Choi <rokt33r.choi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "setupFiles": [
+      "<rootDir>/specs/setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  }
+}
