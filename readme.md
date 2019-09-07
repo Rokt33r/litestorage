@@ -1,11 +1,11 @@
-# LiteStorage
+# LiteStorage - `ltstrg`
 
 Simpler storage for your test experience!
 
 ## Install
 
 ```
-npm i litestorage
+npm i ltstrg
 ```
 
 ## How to use
@@ -13,7 +13,7 @@ npm i litestorage
 Let's assume you want to make a JSON stroage which storing data via localStorage.
 
 ```ts
-import { LiteStorage, localLiteStorage, MemoryLiteStorage } from 'litestorage'
+import { LiteStorage, localLiteStorage, MemoryLiteStorage } from 'ltstrg'
 
 class JSONStorage {
   liteStorage: LiteStorage

@@ -1,8 +1,12 @@
 {
-  "name": "litestorage",
-  "version": "1.0.0",
+  "name": "ltstrg",
+  "version": "1.0.0-0",
   "description": "Simpler storage for your test experience!",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "rimraf dist && tsc -P tsconfig.build.json",
     "lint": "prettier --check src/**/*.ts specs/**/*.ts",
