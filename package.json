@@ -29,6 +29,14 @@
   ],
   "author": "Junyoung Choi <rokt33r.choi@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/Rokt33r/litestorage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rokt33r/litestorage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rokt33r/litestorage/issues"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "codecov": "^3.5.0",
